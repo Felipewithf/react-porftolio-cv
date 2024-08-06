@@ -13,23 +13,15 @@ function Pixoku() {
       <div className='innerGrid'>
         <img src='img/year/2024/pixoku_1.png' alt='' />
         <img src='img/year/2024/pixoku_2.png' alt='' />
+        <img className='fullwidth' src='img/year/2024/pixoku_7.gif' alt='' />
         <p className='description'>The profile page was designed to reflect ancient greek structures; the mirror mirror page is my take on the leaderboard of common games, with the twist that would only know who is better than you rather than seen all the players in the leaderboard, perhaphs this will entice more players to find an attenianble rival to surpass.</p>
-        <img src='img/year/2024/pixoku_3.png' alt='' />
         
+        <img src='img/year/2024/pixoku_3.png' alt='' />
         <img src='img/year/2024/pixoku_4.png' alt='' />
-        <video
-          src="img/year/2024/pixoku_7.mov"
-          controls
-          loop
-          className="video-player-full"
-        ></video>
+       
         <p className='description'>Practice mode allows you to test the game functionalities without recording your time score, the game provides an intuitive interface that warns you if there are conflicting pieces in the board, practice mode only sets 5 missing pieces while the main game is 36 pieces missing.</p>
-        <video
-          src="img/year/2024/pixoku_8.mov"
-          controls
-          loop
-          className="video-player-full"
-        ></video>
+        <img className='fullwidth' src='img/year/2024/pixoku_8.gif' alt='' /> 
+           
          <button onClick={redirectToPixoku} className="redirect-button">
            <h4>Visit Live Website</h4>
          </button>
