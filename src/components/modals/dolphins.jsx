@@ -29,9 +29,9 @@ function Dolphins() {
       <div className='innerGrid'>
       <img className="p-5" src='img/year/2015/dolphins_1.svg' alt='' />
       <p className='description'>The paper describes a small, closed population of bottlenose dolphins living in large, mixed-sex groups in which no permanent emigration/immigration has been observed over the past 7 years.</p>
-      <img className="p-5" src='img/year/2015/dolphins_3.svg' alt='' />
+      <img className="p-5 halfwidth" src='img/year/2015/dolphins_3.svg' alt='' />
       <p className='description'>Both male–male and female–female networks of preferred associates are present, as are long-lasting associations across sexes.All members within the community are relatively closely associated. Fjords are low-productivity systems in which survival may easily require a greater level of co-operation, and hence group stability.Grin's data was the highest recorded observations, where an individual interacted with multiple individuals (from different sexes) during the study</p>
-      <img className="p-5" src='img/year/2015/dolphins_4.svg' alt='' />
+      <img className="p-5 " src='img/year/2015/dolphins_4.svg' alt='' />
       <div className='pdfportal-container' onClick={handleImageClick}>
         <img src='img/year/2015/dolphins_2.png' alt='' />
         <div className='overlay-text'>View Fullscale PDF</div>

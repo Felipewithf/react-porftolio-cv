@@ -2,8 +2,11 @@
   width: 100vw;
   height: 100vh;
   margin: 0;
-  padding: 32px;
+  padding: 32px 32px 0;
   /* border: 1px solid black; */
+  overflow: scroll;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+
 }
 
 /* Disable scrolling on body */
@@ -88,6 +91,7 @@ font-size: 0.8rem;
   margin-bottom: 15px;
   background-color: rgba(255, 255, 255, 0.6);
   z-index: 2; /* Ensure it stays above other content if needed */
+  backdrop-filter: blur(5px);
 }
 
 
@@ -108,6 +112,7 @@ justify-content: space-between;
 
 .artwork-group{
   padding-bottom: 15px;
+  padding-top: 35px;
 }
 
 .artwork-group img{
@@ -151,22 +156,25 @@ justify-content: space-between;
   height: 100%;
   overflow: auto;
   background-color: rgba(255, 255, 255, 0.6);
+  /* backdrop-filter: blur(3px); */
 }
 
 .modal-content {
   background-color: rgba(255, 255, 255, 0.8);
   margin: auto;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border: 1px solid black;
   border-radius: 0;
   width: 80%;
   height: 90%;
-  max-width: 700px;
+  max-width: 1000px;
   display: flex;
   justify-content: start;
   align-items: start;
   overflow: scroll;
   overflow-x: hidden; /* Hide horizontal scrollbar */
+  backdrop-filter: blur(5px);
 }
 
 ::-webkit-scrollbar {
@@ -187,8 +195,10 @@ justify-content: space-between;
   position: sticky;
   align-self: flex-end;
   top: 0px;
+  right: 10px;
   font-size: 10px;
   font-weight: bold;
+  z-index: 10;
 }
 
 .close:hover,
@@ -204,6 +214,7 @@ justify-content: space-between;
 .modal-content .title{
   font-weight: 800;
   margin-top: 10px;
+  margin-left: 20px;
 }
 
 .modal-content .description{
@@ -211,11 +222,18 @@ justify-content: space-between;
   width: 75%;
   line-height: 1rem;
   font-size: 0.8rem;
+  margin-left: 20px;
 }
+
 
 .modal-content .innerGrid{
   margin-top: 20px;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .modal-content img {
@@ -230,6 +248,17 @@ justify-content: space-between;
   margin: 10px 10px;
 }
 
+.modal-content img.halfwidth {
+  width: 50%;
+  height: auto;
+  margin: 10px 10px;
+}
+.modal-content img.qtwidth {
+  width: 25%;
+  height: auto;
+  margin: 10px 10px;
+}
+
 .model-content .border{
   border: 3px solid black;
 }
@@ -237,8 +266,8 @@ justify-content: space-between;
 .modal-content .innerGrid .description{
   margin-top: 20px;
   width: 90%;
-  margin-left: 6%;
-
+  /* padding-left: 30px; */
+  /* align-self: flex-start ; */
 }
 
 .modal-content .pdfportal-container {
@@ -316,6 +345,15 @@ margin-bottom: 10px;
 }
 
 /* comparison slider only */
+.modal-content .comparisonSliders {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.modal-content .comparisonSliders img{
+  margin: 0;
+}
+
 .modal-content .comparisonSliders .title{
   display: flex;
   justify-content: space-around;
@@ -337,6 +375,7 @@ margin-bottom: 10px;
   font-variant: small-caps;
   margin-top: 15px;
   color: gray;
+  width: 100%;
 }
 
 .modal-content .comparisonSliders button{

@@ -45,8 +45,8 @@ function KineticTypo() {
           className="video-player"
         ></video>
         </div>
-        <p className='title'>Sonic Editions</p>
-        <p className='description'>Ensure to turn up the volume to experience this versions as intended</p>
+        <p className='title'>Sonic Editions 🔈</p>
+        <p className='description text-center'>Ensure to turn up the volume to experience this versions as intended</p>
         <video
           src="img/year/2021/kinetictypo_music_1.mp4"
           controls

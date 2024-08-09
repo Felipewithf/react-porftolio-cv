@@ -20,6 +20,7 @@ import LapMesh from './components/modals/lapmesh';
 import UIforAI from './components/modals/uiforai';
 import SaaSRedesign from './components/modals/saasredesign';
 import Weather from './components/modals/weather';
+import Hunny from './components/modals/hunny';
 
 // add theme to the variables for each artwork, and change the logic so it can be filter by year, and theme
 const themeData=[
@@ -35,7 +36,7 @@ const themeData=[
       selected: true,
     },
     {
-      name: "Produc Design: Saas Redesign",
+      name: "Product Design: Saas Redesign",
       component: <SaaSRedesign />,
       cover_img: "img/year/2022/saasredesign_cover.png",
       alt: "",
@@ -99,6 +100,14 @@ const themeData=[
       selected: true,
     },
     {
+      name: "3D Rendering: Winnie the Pooh Hunny Pot",
+      component: <Hunny />,
+      cover_img: "img/year/2017/hunny_cover.png",
+      alt: "",
+      year: "2017",
+      selected: true,
+    },
+    {
       name: "Data Visualization",
       component: <Dolphins />,
       cover_img: "img/year/2015/dolphins_cover.png",
@@ -122,6 +131,7 @@ const themeData=[
       year: "2014",
       selected: true,
     },
+  
     {
       name: "Website Design: Hashmaskers",
       component: <Hashmaskers />,
