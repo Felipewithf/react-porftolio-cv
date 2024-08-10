@@ -100,7 +100,7 @@ const themeData=[
       selected: true,
     },
     {
-      name: "3D Rendering: Winnie the Pooh Hunny Pot",
+      name: "3D Rendering: Hunny Pot",
       component: <Hunny />,
       cover_img: "img/year/2017/hunny_cover.png",
       alt: "",

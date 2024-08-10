@@ -5,8 +5,8 @@ function Hunny() {
 
   return (
     <>
-      <h3 className='title'>3D Rendering: Winnie the Pooh Hunny Pot</h3>
-      <p className='description'>Created from scratch all the 3D assets to recreate the iconic honey pot "hunny pot" from Winnie the Pooh. This was a personal project to practice my 3D skills using only Blender -v2.78.</p>
+      <h3 className='title'>3D Rendering: Hunny Pot</h3>
+      <p className='description'>Designed and developed a detailed 3D model of the iconic 'Hunny Pot' from <em>Winnie the Pooh</em> entirely from scratch. This project was a personal initiative to refine my 3D modeling skills, utilizing Blender v2.78 exclusively. The process involved creating high-quality assets that faithfully capture the charm and nostalgia of the original with a photorealism twist, showcasing my ability to recreate recognizable objects with precision.</p>
       
       <div className='innerGrid'>
       <img src='img/year/2017/hunny_cover.png' alt='' />
