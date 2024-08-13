@@ -21,6 +21,7 @@ import UIforAI from './components/modals/uiforai';
 import SaaSRedesign from './components/modals/saasredesign';
 import Weather from './components/modals/weather';
 import Hunny from './components/modals/hunny';
+import Heroes from './components/modals/heroes';
 
 // add theme to the variables for each artwork, and change the logic so it can be filter by year, and theme
 const themeData=[
@@ -60,22 +61,6 @@ const themeData=[
       selected: true,
     },
     {
-      name: "Future Forum Conference",
-      component: <FutureForum />,
-      cover_img: "img/year/2017/futureforum_cover.png",
-      alt: "",
-      year: "2017",
-      selected: true,
-    },
-    {
-      name: "Alibaba Computing Conference",
-      component: <Alibaba />,
-      cover_img: "img/year/2016/alibaba_cover.png",
-      alt: "",
-      year: "2016",
-      selected: true,
-    },
-    {
       name: "Brand Experience: Souest & Mitsubishi",
       component: <Mitsubishi />,
       cover_img: "img/year/2016/mitsubishi_cover.jpg",
@@ -91,6 +76,31 @@ const themeData=[
       year: "2015",
       selected: true,
     },
+    {
+      name: "Future Forum Conference",
+      component: <FutureForum />,
+      cover_img: "img/year/2017/futureforum_cover.png",
+      alt: "",
+      year: "2017",
+      selected: true,
+    },
+    {
+      name: "Brand Experience: PS4",
+      component: <Ps4 />,
+      cover_img: "img/year/2014/ps4_cover.jpg",
+      alt: "",
+      year: "2014",
+      selected: true,
+    },
+    {
+      name: "Alibaba Computing Conference",
+      component: <Alibaba />,
+      cover_img: "img/year/2016/alibaba_cover.png",
+      alt: "",
+      year: "2016",
+      selected: true,
+    },
+    
     {
       name: "Brand Experience: Kroger Leadership Summit",
       component: <Kroger />,
@@ -124,14 +134,13 @@ const themeData=[
       selected: true,
     },
     {
-      name: "Brand Experience: PS4",
-      component: <Ps4 />,
-      cover_img: "img/year/2014/ps4_cover.jpg",
+      name: "Illustration: Heroes del Futbol",
+      component: <Heroes />,
+      cover_img: "img/year/2020/heroes_cover.png",
       alt: "",
-      year: "2014",
+      year: "2020",
       selected: true,
     },
-  
     {
       name: "Website Design: Hashmaskers",
       component: <Hashmaskers />,

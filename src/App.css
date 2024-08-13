@@ -408,6 +408,10 @@ margin-bottom: 10px;
  /*  X-Small devices (portrait phones, less than 576px) */
  @media (max-width: 575.98px) { 
   
+  .icon{
+    bottom: 35px;
+    }
+
   .modal-content {
   width: 95%;
   }

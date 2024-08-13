@@ -1,0 +1,97 @@
+
+/* custom fonts */
+@import url("https://use.typekit.net/xrp2lzi.css");
+
+/* 
+font-family: "permanent-marker", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-family: "benda", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "benda", sans-serif;
+font-weight: 700;
+font-style: normal;
+*/
+
+
+/* HEROES ONLY */
+
+.heroes .card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 560px;
+}
+
+.heroes img{
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.heroes .card-body{
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-top: 0;
+}
+
+.heroes .card-body .card-title {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 10px;
+  font-family: "permanent-marker", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: start;
+}
+
+.heroes .card-body .card-text {
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-style: normal;
+  color: gray;
+}
+
+.heroes .nav-item .nav-link{
+  border-radius: 0px;
+}
+
+.heroes .nav-item .nav-link:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.heroes .nav-item .nav-link.active{
+  background-color: gray;
+  color: white;
+}
+
+.heroes .nav-item .nav-link.active:hover{
+  cursor: default;
+  opacity: 1;
+}
+
+
+.heroes .nav-item .nav-link{
+  color: gray;
+}
+
+
+
+
+
+
+@media (max-width: 575.98px) { 
+  
+  .heroes .card{
+    height: 450px;
+  }
+  .heroes .card-body{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
