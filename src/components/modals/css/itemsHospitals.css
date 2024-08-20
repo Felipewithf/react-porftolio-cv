@@ -1,0 +1,54 @@
+
+/* HOSPITALS ONLY */
+
+.hospitals img{
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.hospitals .title {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 900;
+  font-size: 1rem;
+  font-variant: small-caps;
+  margin-top: 15px;
+}
+
+.hospitals .nav-item .nav-link{
+  border-radius: 0px;
+}
+
+.hospitals .nav-item .nav-link:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.hospitals .nav-item .nav-link.active{
+  background-color: gray;
+  color: white;
+}
+
+.hospitals .nav-item .nav-link.active:hover{
+  cursor: default;
+  opacity: 1;
+}
+
+
+.hospitals .nav-item .nav-link{
+  color: gray;
+}
+
+
+
+@media (max-width: 575.98px) { 
+  
+  .hospitals .nav-item .nav-link{
+    color: gray;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    margin: 0px 2px;
+  }
+
+}

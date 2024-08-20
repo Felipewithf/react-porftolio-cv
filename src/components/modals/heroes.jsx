@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import SingleHeroes from '../items/single_heroes';
-import './css/itemsContext.css';
+import './css/itemsHeroes.css';
 
 function Heroes() {
 

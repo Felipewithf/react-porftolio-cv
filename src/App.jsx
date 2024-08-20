@@ -22,12 +22,21 @@ import SaaSRedesign from './components/modals/saasredesign';
 import Weather from './components/modals/weather';
 import Hunny from './components/modals/hunny';
 import Heroes from './components/modals/heroes';
+import Hospitals from './components/modals/hospitals';
 
 // add theme to the variables for each artwork, and change the logic so it can be filter by year, and theme
 const themeData=[
   {
   theme: "Selected Projects",
   artworks: [
+    {
+      name: "Hospital Illustrations",
+      component: <Hospitals />,
+      cover_img: "img/year/2020/hospitals.png",
+      alt: "",
+      year: "2020",
+      selected: true,
+    },
     {
       name: "Product Design: Pixoku",
       component: <Pixoku />,
@@ -53,7 +62,7 @@ const themeData=[
       selected: true,
     },
     {
-      name: "Motion Graphics: AI Explainability",
+      name: "Motion Graphics: Explainable AI",
       component: <LapMesh />,
       cover_img: "img/year/2020/lapmesh_cover.png",
       alt: "",
