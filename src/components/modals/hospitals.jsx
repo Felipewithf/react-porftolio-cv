@@ -29,8 +29,8 @@ useEffect(() => {
      
       <div className='innerGrid hospitals' style={{width:"100%"}}>
 
-      <img className='fullwidth' src= 'img/gallery/hospitals/rigshospitalet_h.png' alt='' />
-      <img className='fullwidth' src= 'img/gallery/hospitals/parkland_h.png' alt='' />
+      {/* <img className='fullwidth' src= 'img/gallery/hospitals/rigshospitalet_h.png' alt='' />
+      <img className='fullwidth' src= 'img/gallery/hospitals/parkland_h.png' alt='' /> */}
       <img className='fullwidth' src= 'img/gallery/hospitals/johnsHopkins_h.png' alt='' />
 
 
@@ -57,8 +57,8 @@ useEffect(() => {
         </div>
        
         <div className="container pt-5">
-          <h3>Browse All Hospitals</h3>
-        <p className='title'>filter by location</p>
+          {/* <h3>Browse All Hospitals</h3> */}
+        <p className='title pb-3'>browse all hospitals</p>
         <ul className="nav nav-pills justify-content-center">
           {categories.map((category) => (
             <li className="nav-item" key={category}>
@@ -82,7 +82,7 @@ useEffect(() => {
           {items.map((elem) => {
             const { name, image, continent, year, country } = elem;
             return (
-              <div>
+              <div key={name} >
                 <img className="img-fluid pb-4" src={image} alt={name} />
               </div>
             );

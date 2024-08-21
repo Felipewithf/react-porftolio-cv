@@ -4,6 +4,33 @@ import './App.css';
 
 import themeData from './projects';
 
+// const ImageComponent = ({  key, component, src, alt, mouse, theme }) => {
+//   const [loaded, setLoaded] = useState(false);
+
+//   useEffect(() => {
+//     const img = new Image();
+//     img.src = src;
+//     img.onload = () => setLoaded(true);
+//   }, [src]);
+
+//   const handleMouseEnter = () => mouse(key, theme);
+//   const handleMouseLeave = () => {
+//     setHoveredInfo({ year: null, theme: null, header: '' });
+//   };
+//   return (
+//     <>
+//       {!loaded && <div className="loading-placeholder">Loading...</div>}
+//       {loaded && <img
+//                         src={src}
+//                         alt={alt}
+//                         key={key}
+//                         onMouseEnter={handleMouseEnter}
+//                         onMouseLeave={handleMouseLeave}
+//                         onClick={() => openModal(component)}
+//                       />}
+//     </>
+//   );
+// };
 
 function App() {
   // State to track the hovered image's data-header and the corresponding year
@@ -84,15 +111,15 @@ function App() {
               {artworks
               .filter(artwork => artwork.selected)
               .map(({ name, component, cover_img, alt }) => (
-                      <img
-                        src={cover_img}
-                        alt={alt}
-                        key={name}
-                        onMouseEnter={() => handleMouseEnter(name, theme)}
-                        onMouseLeave={handleMouseLeave}
-                        onClick={() => openModal(component)}
-                      />
-                      // <ImageComponent src={cover_img} alt={alt} component={component} key={name} theme={theme} mouse={handleMouseEnter}/>
+                      // <img
+                      //   src={cover_img}
+                      //   alt={alt}
+                      //   key={name}
+                      //   onMouseEnter={() => handleMouseEnter(name, theme)}
+                      //   onMouseLeave={handleMouseLeave}
+                      //   onClick={() => openModal(component)}
+                      // />
+                      <ImageComponent src={cover_img} alt={alt} component={component} key={name} theme={theme} mouse={handleMouseEnter}/>
                     ))}
               </Masonry>
             </ResponsiveMasonry>
