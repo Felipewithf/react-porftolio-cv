@@ -6,7 +6,6 @@
   /* border: 1px solid black; */
   overflow: scroll;
   overflow-x: hidden; /* Hide horizontal scrollbar */
-
 }
 
 /* Disable scrolling on body */
@@ -30,40 +29,40 @@
   background-color: white;
 }
 
-#introduction{
+#introduction {
   position: relative;
- 
+
   /* border: 1px solid black; */
 }
 
-.icon{
+.icon {
   position: sticky;
   bottom: 20px;
   right: 20px;
   width: 82px;
   font-size: 0.8rem;
-  }
+}
 
-#introduction h1{
+#introduction h1 {
   text-align: start;
   width: 50%;
   font-size: 1rem;
   font-weight: 800;
   margin: 0;
   padding: 0;
-  }
-
-#introduction p{
-text-align: start;
-width: 50%;
-font-size: 0.8rem;
 }
 
-#introduction img{
+#introduction p {
+  text-align: start;
+  width: 50%;
+  font-size: 0.8rem;
+}
+
+#introduction img {
   max-width: 200px;
 }
 
-#introduction .socials{
+#introduction .socials {
   /* border: 1px solid black; */
   width: 80px;
   padding: 2px;
@@ -72,20 +71,18 @@ font-size: 0.8rem;
   justify-content: space-around;
 }
 
-
 /* ######## --------------- ######### */
 /* -------  Static Projects  -------- */
 /* ######## --------------- ######### */
 
-
-.dividerLine{
+.dividerLine {
   background-color: black;
   width: 100%;
   height: 2px;
 }
 
-.year-header{
-  position:sticky;
+.year-header {
+  position: sticky;
   top: 32px;
   padding-top: 0px;
   margin-bottom: 15px;
@@ -94,15 +91,14 @@ font-size: 0.8rem;
   backdrop-filter: blur(5px);
 }
 
-
-.yearholder-headertext{
-  padding-top: 4px ;
+.yearholder-headertext {
+  padding-top: 4px;
   padding-bottom: 6px;
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.yearholder p{
+.yearholder p {
   text-align: end;
   font-size: 1rem;
   color: black;
@@ -110,16 +106,16 @@ justify-content: space-between;
   margin: 0px;
 }
 
-.artwork-group{
+.artwork-group {
   padding-bottom: 15px;
   padding-top: 35px;
 }
 
-.artwork-group img{
+.artwork-group img {
   filter: grayscale(0.5) opacity(0.3);
   transition: filter 0.2s ease-in;
 }
-.artwork-group img:hover{
+.artwork-group img:hover {
   filter: grayscale(0) opacity(1);
 }
 
@@ -127,23 +123,18 @@ justify-content: space-between;
 /* -------  Ongoing Projects  -------- */
 /* ######## --------------- ######### */
 
-
-#ongoing-projects{
+#ongoing-projects {
   padding-left: 50px;
 }
 
-#ongoing-projects .ongoing-text{
+#ongoing-projects .ongoing-text {
   padding-top: 4px;
   padding-bottom: 6px;
 }
 
-
-
 /* ######## --------------- ######### */
 /* ---------  Modal Generic  -------- */
 /* ######## --------------- ######### */
-
-
 
 .modal {
   display: flex;
@@ -181,12 +172,11 @@ justify-content: space-between;
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.8); 
+  background: rgba(255, 255, 255, 0.8);
 }
 ::-webkit-scrollbar-thumb {
-  background: black; 
+  background: black;
 }
-
 
 .close {
   color: white;
@@ -209,15 +199,14 @@ justify-content: space-between;
   cursor: pointer;
 }
 
-
-
-.modal-content .title{
+.modal-content .title {
   font-weight: 800;
   margin-top: 10px;
   margin-left: 20px;
+  text-transform: uppercase;
 }
 
-.modal-content .description{
+.modal-content .description {
   text-align: start;
   width: 75%;
   line-height: 1rem;
@@ -225,8 +214,24 @@ justify-content: space-between;
   margin-left: 20px;
 }
 
+.modal-content ul {
+  text-align: start;
+  width: 75%;
+  line-height: 1rem;
+  font-size: 0.8rem;
+  margin-left: 20px;
+}
 
-.modal-content .innerGrid{
+.modal-content .innerGrid ul {
+  text-align: start;
+  width: 85%;
+  line-height: 1rem;
+  font-size: 0.8rem;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.modal-content .innerGrid {
   margin-top: 20px;
   text-align: center;
   padding-left: 20px;
@@ -259,11 +264,11 @@ justify-content: space-between;
   margin: 10px 10px;
 }
 
-.model-content .border{
+.model-content .border {
   border: 3px solid black;
 }
 
-.modal-content .innerGrid .description{
+.modal-content .innerGrid .description {
   margin-top: 20px;
   width: 90%;
   /* padding-left: 30px; */
@@ -279,7 +284,7 @@ justify-content: space-between;
   justify-content: center;
 }
 
-.modal-content .pdfportal-container img{
+.modal-content .pdfportal-container img {
   display: block;
   width: 65%;
   border: 1px solid black;
@@ -326,17 +331,17 @@ justify-content: space-between;
   border-radius: 10px;
 }
 
-.modal-content button{
-margin-top: 20px;
-margin-bottom: 10px;
+.modal-content button {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-.modal-content button:hover{
+.modal-content button:hover {
   background-color: black;
   color: white;
-  }
+}
 
-.modal-content button h4{
+.modal-content button h4 {
   font-size: 1rem;
   font-weight: 800;
   margin-top: 5px;
@@ -350,11 +355,11 @@ margin-bottom: 10px;
   padding-right: 20px;
 }
 
-.modal-content .comparisonSliders img{
+.modal-content .comparisonSliders img {
   margin: 0;
 }
 
-.modal-content .comparisonSliders .title{
+.modal-content .comparisonSliders .title {
   display: flex;
   justify-content: space-around;
   font-weight: 900;
@@ -367,37 +372,45 @@ margin-bottom: 10px;
   margin-top: 100px;
 }
 
-.modal-content .comparisonSliders .labels{
+.modal-content .comparisonSliders .labels,
+.modal-content .labels {
   display: flex;
   justify-content: space-around;
   font-weight: 600;
   font-size: 0.9rem;
   font-variant: small-caps;
+  text-transform: uppercase;
   margin-top: 15px;
   color: gray;
   width: 100%;
 }
 
-.modal-content .comparisonSliders button{
+.modal-content .caption {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1px;
+  font-style: italic;
+  color: gray;
+  width: 100%;
+}
+
+.modal-content .comparisonSliders button {
   margin-top: 0;
   margin-bottom: 0;
-  }
+}
 
-.modal-content .comparisonSliders .__rcs-handle-root{
-    color: black !important;
-  }
+.modal-content .comparisonSliders .__rcs-handle-root {
+  color: black !important;
+}
 
-.modal-content .comparisonSliders .__rcs-handle-button{
-    background-color: none !important;
-    box-shadow: none !important;
+.modal-content .comparisonSliders .__rcs-handle-button {
+  background-color: none !important;
+  box-shadow: none !important;
+}
 
-  }
-
-.modal-content .comparisonSliders .__rcs-handle-line{
-    box-shadow: none !important;
-  }
-
-
+.modal-content .comparisonSliders .__rcs-handle-line {
+  box-shadow: none !important;
+}
 
 /* ######## --------------- ######### */
 /* ######## --------------- ######### */
@@ -405,9 +418,8 @@ margin-bottom: 10px;
 /* ######## --------------- ######### */
 /* ######## --------------- ######### */
 
- /*  X-Small devices (portrait phones, less than 576px) */
- @media only screen and (max-width: 575.98px) { 
-
+/*  X-Small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 575.98px) {
   .modal-content img.halfwidth {
     width: 90%;
   }
@@ -415,15 +427,15 @@ margin-bottom: 10px;
     width: 50%;
   }
 
-  .icon{
+  .icon {
     bottom: 35px;
-    }
-
-  .modal-content {
-  width: 95%;
   }
 
-  iframe{
+  .modal-content {
+    width: 95%;
+  }
+
+  iframe {
     transform: scale(0.7);
   }
 }

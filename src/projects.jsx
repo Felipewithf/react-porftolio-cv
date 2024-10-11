@@ -21,6 +21,7 @@ import Weather from './components/modals/weather';
 import Hunny from './components/modals/hunny';
 import Heroes from './components/modals/heroes';
 import Hospitals from './components/modals/hospitals';
+import FifaFilter from './components/modals/fifafilter';
 
 // add theme to the variables for each artwork, and change the logic so it can be filter by year, and theme
 const themeData=[
@@ -65,6 +66,14 @@ const themeData=[
       cover_img: "img/year/2020/lapmesh_cover.png",
       alt: "",
       year: "2020",
+      selected: true,
+    },
+    {
+      name: "Product Design: Filter Redesign",
+      component: <FifaFilter />,
+      cover_img: "img/year/2020/lapmesh_cover.png",
+      alt: "",
+      year: "2024",
       selected: true,
     },
     {

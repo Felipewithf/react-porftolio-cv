@@ -25,16 +25,45 @@ function App() {
   };
   
 
-  const openModal = (content) => {
+  const openModal = (name,content) => {
     document.body.classList.add('no-scroll');
     setModalData({ isOpen: true, content });
+    const hashName = name.toLowerCase().replace(/[^a-z]/g, '');
+    window.history.pushState(null, '', `#${hashName}`);
   };
 
   const closeModal = () => {
     document.body.classList.remove('no-scroll');
     setModalData({ isOpen: false, imageSrc: '' });
+    window.history.pushState(null, '', window.location.pathname);
   };
 
+  // Check for hash in the URL when the page loads and open the corresponding modal
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', ''); 
+
+    // Only run if there's a hash in the URL
+  if (window.location.hash && hash) {
+    const cleanHash = hash.toLowerCase().replace(/[^a-z]/g, '');
+
+    // Only proceed if themeData is defined and not empty
+    if (cleanHash && themeData && themeData.length > 0) {
+
+  if (cleanHash) {
+      // Iterate over each artwork in the current theme
+      for (let j = 0; j < themeData[0].artworks.length; j++) {
+        const { name, component } = themeData[0].artworks[j];
+        const cleanName = name.toLowerCase().replace(/[^a-z]/g, ''); // clean the name
+        // Check if the cleaned name matches the hash
+        if (cleanName === cleanHash) {
+          openModal(name,component);
+          return; // Exit once a match is found
+        }
+      }
+    }
+  }
+  }    
+}, [themeData]);
 
 
   return (
@@ -90,7 +119,7 @@ function App() {
                         key={name}
                         onMouseEnter={() => handleMouseEnter(name, theme)}
                         onMouseLeave={handleMouseLeave}
-                        onClick={() => openModal(component)}
+                        onClick={() => openModal(name,component)}
                       />
                       // <ImageComponent src={cover_img} alt={alt} component={component} key={name} theme={theme} mouse={handleMouseEnter}/>
                     ))}
