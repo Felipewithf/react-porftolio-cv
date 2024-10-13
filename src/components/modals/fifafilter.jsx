@@ -37,11 +37,10 @@ function FifaFilter() {
       <div className="innerGrid" style={{ width: "100%" }}>
         <p className="title">Starting Point</p>
         <video
-          src="img/year/2024/filter_2.mov"
+          src="img/year/2024/fifafilter_0.mp4"
           controls
           className="video-player-full mb-5"
         ></video>
-        {/* <video src="img/year/2024/filter_1.mov" controls className="video-player"></video> */}
 
         <p className="title">1) Define users needs</p>
         <p className="description">
@@ -93,7 +92,7 @@ function FifaFilter() {
           collectibles category, does the same thing, but is now in context of importance
           within the marketplace.
         </p>
-        <img className="halfwidth" src="img/year/2024/filter_3.png" alt="" />
+        <img className="halfwidth" src="img/year/2024/fifafilter_1.png" alt="" />
         <p className="description">
           Now new and old users can tell quickly what the marketplace is about and all the
           different type of collectibles they can find.
@@ -134,7 +133,7 @@ function FifaFilter() {
           nested under the grandparent category "Teams", thus allowing users to quickly
           select if they want to seach by tournament or teams.
         </p>
-        <img className="fullwidth" src="img/year/2024/filter_4.png" alt="" />
+        <img className="fullwidth" src="img/year/2024/fifafilter_2.png" alt="" />
         <p className="description">
           With this change, all tournaments and teams become accessible, allowing new
           users to quickly catchup on what is available in the market.
@@ -177,7 +176,7 @@ function FifaFilter() {
           lets make all the main categories collapsable, this will improve the mobile
           experience to avoid unnecessary scrolling.
         </p>
-        <img className="halfwidth" src="img/year/2024/filter_5.png" alt="" />
+        <img className="halfwidth" src="img/year/2024/fifafilter_3.png" alt="" />
         <p className="description">
           Now that we have collapsable categories we can have a default state that is more
           inclusive for first time users - hiding price range and other collectibles -
@@ -186,13 +185,13 @@ function FifaFilter() {
           which fitlers they had collapsable and which were open. Yeay for great user
           experience!
         </p>
-        <img className="halfwidth" src="img/year/2024/filter_6.png" alt="" />
+        <img className="halfwidth" src="img/year/2024/fifafilter_4.png" alt="" />
         <p className="description">
           When we filter all the way to our lower filter, we can use the logos and emblems
           of tournaments, national teams and clubs teams to help users search faster and
           with joy.
         </p>
-        <img className="fullwidth" src="img/year/2024/filter_7.png" alt="" />
+        <img className="fullwidth" src="img/year/2024/fifafilter_5.png" alt="" />
         <ul>
           <li className="pb-1 pt-3">
             ✅ <strong>Clarity on what the marketplace sells:</strong>
@@ -221,7 +220,7 @@ function FifaFilter() {
           users profile to know which challenge the user has completed and which it has
           not.
         </p>
-        <img className="halfwidth" src="img/year/2024/filter_8.png" alt="" />
+        <img className="halfwidth" src="img/year/2024/fifafilter_6.png" alt="" />
         <p className="description">
           It might seem odd to add this filter mechanism here, but challenges can be very
           competitive during a short period of time, and currently is very cumbersome and
@@ -249,16 +248,48 @@ function FifaFilter() {
         </ul>
         <p className="title">3) UI Prototype Design</p>
         <p className="description">
-          This project is based on the filter mechanism and usability, rather than
-          branding and UI modules exploration, therefore we will use the same style,
-          colors and typography treatment that is currently existing in the website.
+          I use the same style, colors and typography treatment that is currently existing
+          in the website, since this project was focus on the UX rather than the UI
+          redesign.
         </p>
 
-        <img className="qtwidth" src="img/year/2024/filter_9.png" alt="" />
+        <img className="qtwidth" src="img/year/2024/fifafilter_7.png" alt="" />
         <p className="caption mb-5">Final filter menu (collapsed)</p>
 
-        <img className="fullwidth mt-5" src="img/year/2024/filter_10.png" alt="" />
+        <img className="fullwidth mt-5" src="img/year/2024/fifafilter_8.png" alt="" />
         <p className="caption">Filter moments by tournaments</p>
+
+        <img className="fullwidth mt-5" src="img/year/2024/fifafilter_9.png" alt="" />
+        <p className="caption">Filter moments by teams</p>
+
+        <img className="halfwidth mt-5" src="img/year/2024/fifafilter_10.png" alt="" />
+        <p className="caption">Filter moments by challenge requirements</p>
+
+        <img className="halfwidth mt-5" src="img/year/2024/fifafilter_11.png" alt="" />
+        <p className="caption">Filter by other items</p>
+
+        <p className="title mt-5">Key Improvements</p>
+        <p className="description">
+          This project focused on a comprehensive UX redesign tailored specifically for
+          collectors, enhancing both usability and functionality. The key improvements
+          revolved around a collector-centric focus, ensuring the interface meets the
+          unique needs of enthusiasts in this space. By introducing higher customization,
+          users now have greater control over how they view and seek their collections,
+          creating a more personalized experience by filtering by user-known categories.{" "}
+          <br /> <br />
+          The redesign also improved category recognition using icons and logos,
+          simplifying the way users identify and navigate through their collections, which
+          boosts accessibility and overall engagement. Additionally, the entire experience
+          has been streamlined with a cleaner, more intuitive interface that reduces
+          complexity, making it easier for both newcomers and experienced users to
+          interact with the platform. With these improvements, the platform is positioned
+          for massive growth, offering a scalable architecture that can accommodate an
+          expanding user base without sacrificing performance or user satisfaction. This
+          redesign ensures the platform will evolve along with the growing demands of the
+          collector community and business goals.
+        </p>
+
+        <div className="endofmodal"></div>
       </div>
     </>
   );
