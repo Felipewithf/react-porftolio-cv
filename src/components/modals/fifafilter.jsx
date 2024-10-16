@@ -3,7 +3,7 @@ import React from "react";
 function FifaFilter() {
   return (
     <>
-      <h3 className="title">Filter Mechanism Redesign</h3>
+      <h3 className="title">Filter Menu Redesign</h3>
       <p className="description">
         As part of a side project, I undertook a complete redesign of the filtering
         mechanism of the marketplace for collect.fifa.com to enhance user experience. My
@@ -40,7 +40,7 @@ function FifaFilter() {
 
         <p className="title">1) Define users needs</p>
         <p className="description">
-          I have define this user nedds based on my experience, deep knowledge of futbol
+          I have define this user needs based on my experience, deep knowledge of futbol
           federations, clubs, and FIFA to make some inform guesses about the user pain
           points. In addition, I have been a user of this platform for two years, spent a
           good amount of money, hold a VIP membership and even onboarded some friends. You
@@ -127,11 +127,11 @@ function FifaFilter() {
           need to create a smart nesting categories based on high-to-low order.
           <br />
           <br />
-          Tournaments can be a high-order category, nested inside Tournaments are
-          types-of-tournaments, and nested inside type-of-tournaments we find
-          Year-specific Tournaments. Similar with Teams, inside Teams we find
-          type-of-teams (club or country), and inside there would be the single teams.thus
-          allowing users to quickly select if they want to seach by tournament or teams.
+          Tournaments can be a high-order category, and nested inside are
+          Types-of-Tournaments, and within that we find Year-Specific Tournaments. Similar
+          with Teams, inside Teams we find Type-of-Teams (club or country), and within
+          there would be the single teams, thus allowing users to quickly select if they
+          want to seach by tournament or teams.
         </p>
         <img className="fullwidth" src="img/year/2024/fifafilter_2.png" alt="" />
         <p className="description">
@@ -162,11 +162,11 @@ function FifaFilter() {
         <div className="labels pt-4">2.3) Find categories faster</div>
         <p className="description">
           The goal here is to hide all filters that are not consider high-traffic, the
-          less options the user will see at a glance the faster it can find what is
-          looking for, and in turn improve the experience. First lets look at the Rarity
-          filter category, the grant majority of items are
-          <em> Common, Uncommon, Rare, Epic, Iconic</em> so it makes sense to display only
-          those and hide anything else.
+          less options the user will see at a glance the faster they can find what they
+          are looking for, and in turn improve the experience. First let's look at the
+          Rarity filter category, the grant majority of items are
+          <em> Common, Rare, Epic, Iconic</em> so it makes sense to display only those and
+          hide anything else.
           <br />
           <br />
           Now lets look at the Other Collectibles category, icons make it more intuitive
@@ -175,16 +175,16 @@ function FifaFilter() {
           <br />
           <br />
           The main categories can grow and be very long - longer than the screen size - so
-          lets make all the main categories collapsable, this will improve the mobile
+          let's make all the main categories collapsible, this will improve the mobile
           experience to avoid unnecessary scrolling.
         </p>
         <img className="halfwidth" src="img/year/2024/fifafilter_3.png" alt="" />
         <p className="description">
-          Now that we have collapsable categories we can have a default state that is more
+          Now that we have collapsible categories we can have a default state that is more
           cleaner and simple for first time users - hiding Price Range and Other
           Collectibles - only showcasing the Rarity and Moments filters. We can also keep
           track of user preferences so the app would remember which fitlers they had
-          collapsable and which were open. Yeay for great user experience!
+          collapsible and which were open. Yeay for great user experience!
         </p>
         <img className="halfwidth" src="img/year/2024/fifafilter_4.png" alt="" />
         <p className="description">
@@ -212,14 +212,14 @@ function FifaFilter() {
             traffic to the marketplace, yet specific filters are non-existing.
           </li>
         </ul>
-        <div className="labels pt-4">2.3) Help to complete challenges</div>
+        <div className="labels pt-4">2.4) Help to complete challenges</div>
         <p className="description">
           FIFA collect has a gamify concept called Challenges, which sometimes come with
-          rewards like Right-To-Buy tickets and other limited edition items, to complete
+          rewards like Right-To-Buy tickets and other limited edition items. To complete
           Challenges the majority of users rely on the marketplace to buy their missing
           pieces. To help users complete the challenges we can create custom filters for
-          each challenge, and access the user progress for each challenge to know which
-          challenge the user is close to completing, and which has been completed.
+          each challenge, and assess the user's progress for each challenge to visualize
+          the user's progress.
         </p>
         <img className="halfwidth" src="img/year/2024/fifafilter_6.png" alt="" />
         <p className="description">
