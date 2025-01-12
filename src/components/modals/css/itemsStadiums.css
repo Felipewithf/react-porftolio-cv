@@ -1,0 +1,49 @@
+/* STADIUMS ONLY */
+
+.modal-content .stadiums .nav-item img {
+  border-radius: 0px;
+  padding: 5px;
+  width: 60px;
+  /* filter: brightness(1.5);
+  filter: saturate(0.1); */
+  filter: grayscale(1);
+  opacity: 0.5;
+  border: 1px solid gray;
+  background-color: white;
+}
+
+.modal-content .stadiums .nav-item img:hover {
+  cursor: pointer;
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.modal-content .stadiums .nav-item.active img {
+  /* background-color: gray; */
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.modal-content .stadiums .nav-item img:hover {
+  cursor: default;
+  opacity: 1;
+}
+
+.modal-content .stadiums .nav {
+  width: 560px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .modal-content .stadiums .nav {
+    width: 378px;
+    padding-bottom: 20px;
+  }
+
+  .modal-content .stadiums .nav-item img {
+    padding: 5px;
+    width: 40px;
+    padding: 2px;
+    margin: 5px;
+  }
+}

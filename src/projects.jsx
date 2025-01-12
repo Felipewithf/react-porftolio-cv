@@ -22,12 +22,21 @@ import Hunny from "./components/modals/hunny";
 import Heroes from "./components/modals/heroes";
 import Hospitals from "./components/modals/hospitals";
 import FifaFilter from "./components/modals/fifafilter";
+import Stadiums from "./components/modals/stadiums";
 
 // add theme to the variables for each artwork, and change the logic so it can be filter by year, and theme
 const themeData = [
   {
     theme: "Selected Projects",
     artworks: [
+      {
+        name: "Art Direction: FIFA & Modex ",
+        component: <Stadiums />,
+        cover_img: "img/year/2024/stadiums_cover.png",
+        alt: "",
+        year: "2024",
+        selected: true,
+      },
       {
         name: "Hospital Illustrations",
         component: <Hospitals />,
