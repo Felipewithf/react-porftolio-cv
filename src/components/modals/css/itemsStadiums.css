@@ -35,14 +35,19 @@
 }
 
 @media (max-width: 575.98px) {
+  .modal-content .stadiums {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .modal-content .stadiums .nav {
-    width: 378px;
+    width: 350px;
     padding-bottom: 20px;
   }
 
   .modal-content .stadiums .nav-item img {
     padding: 5px;
-    width: 40px;
+    width: 36px;
     padding: 2px;
     margin: 5px;
   }
