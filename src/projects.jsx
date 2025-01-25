@@ -36,6 +36,7 @@ const themeData = [
         alt: "",
         year: "2024",
         selected: true,
+        topic: ["football, art-direction"],
       },
       {
         name: "Hospital Illustrations",
@@ -44,6 +45,7 @@ const themeData = [
         alt: "",
         year: "2020",
         selected: true,
+        topic: ["art-direction"],
       },
       {
         name: "Product Design: Pixoku",
