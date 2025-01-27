@@ -21,6 +21,7 @@ import Heroes from "./components/modals/heroes";
 import Hospitals from "./components/modals/hospitals";
 import FifaFilter from "./components/modals/fifafilter";
 import Stadiums from "./components/modals/stadiums";
+import SoccerSpectatorship from "./components/modals/soccerspectatorship";
 
 // add theme to the variables for each artwork, and change the logic so it can be filter by year, and theme
 const masterProjects = [
@@ -50,6 +51,15 @@ const masterProjects = [
     year: "2024",
     selected: true,
     topic: ["gaming", "product-design", "graphic-design"],
+  },
+  {
+    name: "UX Research: Soccer Spectatorship",
+    component: <SoccerSpectatorship />,
+    cover_img: "img/year/2018/soccerspectatorship_cover.webp",
+    alt: "",
+    year: "2018",
+    selected: true,
+    topic: ["football", "user-experience"],
   },
   {
     name: "Product Design: Saas Redesign",
