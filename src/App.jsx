@@ -9,6 +9,7 @@ function App() {
   const [hoveredInfo, setHoveredInfo] = useState({ year: null, header: "" });
   const [modalData, setModalData] = useState({ isOpen: false, imageSrc: "" });
   const [topicFilter, setTopicFilter] = useState(null);
+  const [view, setView] = useState("portfolio");
 
   let displayProjects = masterProjects;
 
@@ -82,9 +83,23 @@ function App() {
                 Empowering teams to create innovative and objective experiences
                 through physical events and digital products.
               </p>
+              <ul className="nav-list">
+                <li
+                  className={view === "portfolio" ? "active" : ""}
+                  onClick={() => setView("portfolio")}
+                >
+                  Portfolio
+                </li>
+                <li
+                  className={view === "values" ? "active" : ""}
+                  onClick={() => setView("values")}
+                >
+                  Core Values
+                </li>
+              </ul>
             </div>
             <div className="socials">
-              <a href="https://github.com/Felipewithf" target="_blank">
+              {/* <a href="https://github.com/Felipewithf" target="_blank">
                 <svg
                   height="32"
                   aria-hidden="true"
@@ -94,7 +109,7 @@ function App() {
                 >
                   <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
                 </svg>
-              </a>
+              </a> */}
               <a
                 href="https://www.linkedin.com/in/felipewithf/"
                 target="_blank"
@@ -111,43 +126,183 @@ function App() {
             </div>
           </div>
         </div>
+
         <div className="col-md-8" id="static_projects">
           <div className="sp_masterHolder">
-            <div className="yearholder">
-              <div className="year-header">
-                <div className="dividerLine"></div>
-                <div className="yearholder-headertext">
-                  <p className="header-only-text">{hoveredInfo.header}</p>
-                  <p>Selected {topicFilter} Projects</p>
+            {view === "portfolio" && (
+              <div className="yearholder">
+                <div className="year-header">
+                  <div className="dividerLine"></div>
+                  <div className="yearholder-headertext">
+                    <p className="header-only-text">{hoveredInfo.header}</p>
+                    <p>Selected {topicFilter} Projects</p>
+                  </div>
+                  <div className="dividerLine"></div>
                 </div>
-                <div className="dividerLine"></div>
+                <ResponsiveMasonry
+                  columnsCountBreakPoints={{
+                    350: 2,
+                    750: 3,
+                    900: 3,
+                    1200: 3,
+                  }}
+                  className="artwork-group"
+                >
+                  <Masonry gutter="10px">
+                    {displayProjects
+                      // .filter((artwork) => artwork.selected)
+                      .map(({ name, component, cover_img, alt }) => (
+                        <img
+                          src={cover_img}
+                          alt={alt}
+                          key={name}
+                          onMouseEnter={() => handleMouseEnter(name)}
+                          onMouseLeave={handleMouseLeave}
+                          onClick={() => openModal(name, component)}
+                        />
+                        // <ImageComponent src={cover_img} alt={alt} component={component} key={name} theme={theme} mouse={handleMouseEnter}/>
+                      ))}
+                  </Masonry>
+                </ResponsiveMasonry>
               </div>
-              <ResponsiveMasonry
-                columnsCountBreakPoints={{
-                  350: 2,
-                  750: 3,
-                  900: 3,
-                  1200: 3,
-                }}
-                className="artwork-group"
-              >
-                <Masonry gutter="10px">
-                  {displayProjects
-                    // .filter((artwork) => artwork.selected)
-                    .map(({ name, component, cover_img, alt }) => (
-                      <img
-                        src={cover_img}
-                        alt={alt}
-                        key={name}
-                        onMouseEnter={() => handleMouseEnter(name)}
-                        onMouseLeave={handleMouseLeave}
-                        onClick={() => openModal(name, component)}
-                      />
-                      // <ImageComponent src={cover_img} alt={alt} component={component} key={name} theme={theme} mouse={handleMouseEnter}/>
-                    ))}
-                </Masonry>
-              </ResponsiveMasonry>
-            </div>
+            )}
+            {view === "values" && (
+              <div className="yearholder">
+                <div className="year-header">
+                  <div className="dividerLine"></div>
+                  <div className="yearholder-headertext">
+                    <p className="header-only-text">Cover Values</p>
+                  </div>
+                  <div className="dividerLine"></div>
+                  <div className="core-values-container">
+                    <div className="core-value-box">
+                      <p>Creativity</p>
+                      <description>
+                        Cross-pollinating ideas from one domain to another is
+                        one of my strongest assets, during my Design Master’s, I
+                        combined techniques from sports, accessibility, and
+                        design research to create a toolkit for deafblind sport
+                        spectators. Even now, I mix my design and technology
+                        experience with sports business, always seeking a unique
+                        edge by blending different domains. I have also found
+                        creativity inspires others by showing there is always a
+                        new way forward.
+                      </description>
+                      <quote>“What if we do it this way?”</quote>
+                    </div>
+                    <div className="core-value-box">
+                      <p>Compassion</p>
+                      <description>
+                        Having empathy for different lived experiences ensures
+                        people around me are listened to and thought of. In the
+                        health-tech sector, I helped build AI-powered tools,
+                        there I came to recognize that surgeons and hospital
+                        administrators weren’t just “end users” they carry
+                        fears, doubts, and responsibilities. Compassion for
+                        their concerns helped me design experiences that built
+                        trust and meaningful change.
+                      </description>
+                      <quote>
+                        “Why does this solution not work for this person?”
+                      </quote>
+                    </div>
+                    <div className="core-value-box">
+                      <p>Curiosity</p>
+                      <description>
+                        I always seek to learn more, unlearning old habits and
+                        embraced new methods. Technology evolves quickly, and I
+                        make it a point to keep up by experimenting with new
+                        tools and approaches. Curosity from blockchain to AI,
+                        sports to design, healthcare to education. This
+                        willingness to dive into the unknown keeps me adaptable,
+                        sharp, and ready to apply the latest knowledge to solve
+                        challenges in meaningful ways.
+                      </description>
+                      <quote>
+                        “The more I learn, the more I realize how much more
+                        there is to explore.”
+                      </quote>
+                    </div>
+                    <div className="core-value-box">
+                      <p>Justice</p>
+                      <description>
+                        I am passionate about finding ways to balance power
+                        dynamics and ensure fairness for everyone involved. In
+                        sports, that means thinking about how athletes can be
+                        valued at all stages of their careers even after
+                        retirement so they can continue to contribute to the
+                        sport ecosystem. Even outside of sports, I have always
+                        been drawn to asking how power and opportunity can be
+                        distributed more fairly.
+                      </description>
+                      <quote>
+                        “Are we giving fair value to all the stakeholders?”
+                      </quote>
+                    </div>
+                    <div className="core-value-box">
+                      <p>Change</p>
+                      <description>
+                        Change brings disruption, but also opportunities. I have
+                        embraced disruption in my own path. Moving to different
+                        countries, walking away from a secure career, going back
+                        to school on multiple occasions. This shows my
+                        willingness to step into change to find new
+                        opportunities. If I want to drive change, I need to
+                        change myself, be ok with disruption, and be ready to
+                        embrace the opportunities that reveal themselves.
+                      </description>
+                      <quote>“We only grow when we are uncomfortable”</quote>
+                    </div>
+                    <div className="core-value-box">
+                      <p>Fun</p>
+                      <description>
+                        Fun is the value that keeps my other values grounded. I
+                        consider this close to my life philosophy. I see fun as
+                        more than entertainment; it’s a way of approaching
+                        challenges. Chaos, disruption, or tough changes can be
+                        reframed as part of the “game” of life. Fun is always
+                        the spark and the glue altogether: it keeps me energized
+                        and this energy is contagious to the people around me.
+                      </description>
+                      <quote>
+                        “Life is meant to be enjoyed, not just endured”
+                      </quote>
+                    </div>
+                    <div className="tldr-container">
+                      <h3>TL;DR</h3>
+                      <description>
+                        I lead with <strong>creativity</strong>, crossing
+                        boundaries to see new possibilities and solve challenges
+                        in unexpected ways.{" "}
+                      </description>
+                      <description>
+                        I act with <strong>compassion</strong>, recognizing the
+                        lived experiences of others and designing solutions that
+                        include everyone.{" "}
+                      </description>
+                      <description>
+                        I stay rooted in <strong>curiosity</strong>, willing to
+                        unlearn and relearn to keep growing alongside the world
+                        around me.{" "}
+                      </description>
+                      <description>
+                        I pursue <strong>justice</strong>, ensuring fairness and
+                        balance so every stakeholder has a voice and value.{" "}
+                      </description>
+                      <description>
+                        I embrace <strong>change</strong>, welcoming chaos as a
+                        space for growth and transformation.
+                      </description>
+                      <description>
+                        I infuse <strong>fun</strong>, because life is a big
+                        boardgame, and the best outcomes come when we enjoy
+                        playing together.
+                      </description>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
