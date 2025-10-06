@@ -179,43 +179,36 @@ function App() {
                       <p>Creativity</p>
                       <description>
                         Cross-pollinating ideas from one domain to another is
-                        one of my strongest assets, during my Design Master’s, I
-                        combined techniques from sports, accessibility, and
-                        design research to create a toolkit for deafblind sport
-                        spectators. Even now, I mix my design and technology
-                        experience with sports business, always seeking a unique
-                        edge by blending different domains. I have also found
-                        creativity inspires others by showing there is always a
-                        new way forward.
+                        one of my strongest assets. During my Master’s, I
+                        combined techniques from design research, accessibility,
+                        and sports to create a toolkit for deafblind sport
+                        spectators. I have found creativity inspires others by
+                        showing there is always a new way forward.
                       </description>
                       <quote>“What if we do it this way?”</quote>
                     </div>
                     <div className="core-value-box">
                       <p>Compassion</p>
                       <description>
-                        Having empathy for different lived experiences ensures
-                        people around me are listened to and thought of. In the
-                        health-tech sector, I helped build AI-powered tools,
-                        there I came to recognize that surgeons and hospital
-                        administrators weren’t just “end users” they carry
-                        fears, doubts, and responsibilities. Compassion for
-                        their concerns helped me design experiences that built
-                        trust and meaningful change.
+                        In the health-tech sector, I helped build AI-powered
+                        tools, there I came to recognize that surgeons and
+                        hospital administrators weren’t just “end users” they
+                        carry fears, doubts, and responsibilities. Compassion
+                        for their concerns helped me design experiences that
+                        built trust and meaningful change.
                       </description>
                       <quote>
-                        “Why does this solution not work for this person?”
+                        “Have empathy for different lived experiences.”
                       </quote>
                     </div>
                     <div className="core-value-box">
                       <p>Curiosity</p>
                       <description>
-                        I always seek to learn more, unlearning old habits and
-                        embraced new methods. Technology evolves quickly, and I
-                        make it a point to keep up by experimenting with new
-                        tools and approaches. Curosity from blockchain to AI,
-                        sports to design, healthcare to education. This
-                        willingness to dive into the unknown keeps me adaptable,
-                        sharp, and ready to apply the latest knowledge to solve
+                        Technology evolves quickly, and I make it a point to
+                        keep up by experimenting with new tools and approaches.
+                        From blockchain to AI, sports to art, healthcare to
+                        education. This willingness to dive into the unknown
+                        keeps me ready to apply the latest knowledge to solve
                         challenges in meaningful ways.
                       </description>
                       <quote>
@@ -232,8 +225,8 @@ function App() {
                         valued at all stages of their careers even after
                         retirement so they can continue to contribute to the
                         sport ecosystem. Even outside of sports, I have always
-                        been drawn to asking how power and opportunity can be
-                        distributed more fairly.
+                        asked how power and opportunity can be distributed more
+                        fairly.
                       </description>
                       <quote>
                         “Are we giving fair value to all the stakeholders?”
@@ -242,27 +235,26 @@ function App() {
                     <div className="core-value-box">
                       <p>Change</p>
                       <description>
-                        Change brings disruption, but also opportunities. I have
-                        embraced disruption in my own path. Moving to different
-                        countries, walking away from a secure career, going back
-                        to school on multiple occasions. This shows my
+                        Change brings disruption, but also opportunities. Moving
+                        to different countries,learning a new tool, going back
+                        to school on multiple occasions. These actions show my
                         willingness to step into change to find new
                         opportunities. If I want to drive change, I need to
                         change myself, be ok with disruption, and be ready to
                         embrace the opportunities that reveal themselves.
                       </description>
-                      <quote>“We only grow when we are uncomfortable”</quote>
+                      <quote>“Change is inevitable.”</quote>
                     </div>
                     <div className="core-value-box">
                       <p>Fun</p>
                       <description>
                         Fun is the value that keeps my other values grounded. I
-                        consider this close to my life philosophy. I see fun as
-                        more than entertainment; it’s a way of approaching
-                        challenges. Chaos, disruption, or tough changes can be
-                        reframed as part of the “game” of life. Fun is always
-                        the spark and the glue altogether: it keeps me energized
-                        and this energy is contagious to the people around me.
+                        consider this close to my life philosophy. It’s a way of
+                        approaching challenges. Chaos, disruption, or tough
+                        changes can be reframed as part of the “game” of life.
+                        Fun is always the spark and the glue altogether: it
+                        keeps me energized and this energy is contagious to the
+                        people around me.
                       </description>
                       <quote>
                         “Life is meant to be enjoyed, not just endured”
@@ -271,32 +263,28 @@ function App() {
                     <div className="tldr-container">
                       <h3>TL;DR</h3>
                       <description>
-                        I lead with <strong>creativity</strong>, crossing
-                        boundaries to see new possibilities and solve challenges
-                        in unexpected ways.{" "}
+                        I lead with <strong>creativity</strong>, solving
+                        challenges in unexpected ways.{" "}
                       </description>
                       <description>
-                        I act with <strong>compassion</strong>, recognizing the
-                        lived experiences of others and designing solutions that
-                        include everyone.{" "}
+                        I act with <strong>compassion</strong>, designing
+                        solutions that are inclusive.{" "}
                       </description>
                       <description>
-                        I stay rooted in <strong>curiosity</strong>, willing to
-                        unlearn and relearn to keep growing alongside the world
-                        around me.{" "}
+                        I stay <strong>curious</strong>, ready to relearn as the
+                        world evolves.{" "}
                       </description>
                       <description>
-                        I pursue <strong>justice</strong>, ensuring fairness and
-                        balance so every stakeholder has a voice and value.{" "}
+                        I pursue <strong>justice</strong>, so every stakeholder
+                        has a voice and value.{" "}
                       </description>
                       <description>
-                        I embrace <strong>change</strong>, welcoming chaos as a
-                        space for growth and transformation.
+                        I embrace <strong>change</strong>, as a space for growth
+                        and transformation.
                       </description>
                       <description>
-                        I infuse <strong>fun</strong>, because life is a big
-                        boardgame, and the best outcomes come when we enjoy
-                        playing together.
+                        I infuse <strong>fun</strong>, because it breaks
+                        barriers and connects us.
                       </description>
                     </div>
                   </div>
